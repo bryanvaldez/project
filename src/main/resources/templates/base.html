@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"   
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <title>Layout page</title>
+    <script charset="UTF-8" type="text/javascript" th:src="@{/js/lib/angular.min.js}"></script>  
+    <script charset="UTF-8" type="text/javascript" th:src="@{/js/lib/angular-aria.min.js}"></script>  
+    <script charset="UTF-8" type="text/javascript" th:src="@{/js/lib/angular-animate.min.js}"></script>  
+    <script charset="UTF-8" type="text/javascript" th:src="@{/js/lib/angular-material.min.js}"></script>  
+    <script charset="UTF-8" type="text/javascript" th:src="@{/js/lib/angular-messages.min.js}"></script>     
+</head>
+<body>
+  <header>
+    <h1>My website</h1>
+  </header>
+  <section layout:fragment="content">
+    <p>Page content goes here</p>
+  </section>
+  <footer>
+    <p>My footer</p>
+    <p layout:fragment="custom-footer">Custom footer here</p>
+  </footer>  
+</body>
+</html>
