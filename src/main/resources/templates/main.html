@@ -2,14 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"   
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{Base}">
+      layout:decorate="~{base}">
     <head>
         <title>Content page 1</title>
     </head>
     <body>
-        <section layout:fragment="content">
-            <p>This is a paragraph from content page 1</p>
-        </section>
-
-    </body>
+        <div layout:fragment="page_content" id="page_content">
+            <h3>Page 1</h3>
+            <div class="alert alert-info" style="display: none;" id="js-content">
+            </div>
+        </div>
+    </body>  
 </html>
+
+
+<!--https://github.com/ultraq/thymeleaf-layout-dialect-->
